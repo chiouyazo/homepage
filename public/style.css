@@ -106,6 +106,13 @@ body {
   .linkImageParent {
     width: calc(50% - 20px);
   }
+  
+  .centered-text {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -38%);
+  }
 }
 
 .scroll-text {

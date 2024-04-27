@@ -109,9 +109,9 @@ body {
   
   .centered-text {
     position: absolute;
-    top: 38%;
+    top: 27%;
     left: 50%;
-    transform: translate(-50%, -38%);
+    transform: translate(-50%, -27%);
   }
 }
 

@@ -56,7 +56,7 @@ body {
 .sticky {
   position: fixed;
   top: 45%;
-  right: 20px;
+  right: 25px;
   transform: translateY(-50%);
   z-index: 1;
 }
@@ -68,6 +68,8 @@ body {
   margin-bottom: 10px;
   position: relative;
   padding-left: 15px;
+  padding: 3px;
+  padding-right: 5px;
 }
 
 .sticky a::before {
@@ -77,9 +79,10 @@ body {
   right: 0;
   width: 0;
   height: 0;
-  margin-left: 2px;
+  margin-left: 5px;
   border-style: solid;
-  border-width: 10px 10px 10px 10px;
+  border-width: 2px 2px 2px 2px;
+  padding: 3px;
   border-color: lightgreen lightgreen transparent transparent;
 }
 
@@ -90,4 +93,10 @@ body {
   position: relative;
   z-index: 1;
   margin-top: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .sticky {
+    display: none;
+  }
 }

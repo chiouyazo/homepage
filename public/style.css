@@ -111,6 +111,11 @@ body {
     left:50%;
     transform: translate(-50%, -70%);
   }
+  .centered-text {
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -35%);
+  }
 }
 
 .scroll-text {

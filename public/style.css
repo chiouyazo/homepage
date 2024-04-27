@@ -33,6 +33,8 @@ body {
   /* top: 50%; */
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 
@@ -45,6 +47,7 @@ body {
   width: 150px;
   align-items: center;
   flex-direction: column;
+  margin: 10px;
 }
 
 .linkImageParent b {
@@ -100,4 +103,17 @@ body {
   .sticky {
     display: none;
   }
+  .linkImageParent {
+    width: calc(50% - 20px);
+  }
+}
+
+.scroll-text {
+  position: absolute;
+  top:98%;
+  left:50%;
+  transform: translate(-50%, -98%);
+  min-width: 300px;
+  text-align: center;
+  color: #888;
 }

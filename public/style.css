@@ -17,24 +17,21 @@ body {
 }
 
 .row-container {
-  /* margin-top: 30px; Adjust the margin to your preference */
+  /* margin-top: 30px; */
   display: flex;
   justify-content: center;
 }
 
 .row {
   position: absolute;
-  top:75%;
-  left:50%;
+  top: 75%;
+  left: 50%;
   transform: translate(-50%, -75%);
-  /* margin-top: 75%; 
-  width: 50%;
-   */
-  /* top: 50%; */
   display: flex;
-  justify-content: center;
+  justify-content: center; 
   flex-wrap: wrap;
   margin-top: 30px;
+  min-width: 250px;
 }
 
 
@@ -47,7 +44,8 @@ body {
   width: 150px;
   align-items: center;
   flex-direction: column;
-  margin: 10px;
+  margin: 10px auto;
+  padding: 15px;
 }
 
 .linkImageParent b {

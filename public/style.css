@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: black;
-  color: #f1a6f7;
 }
 
 .centered-text {
@@ -22,6 +21,65 @@ body {
   justify-content: center;
 }
 
+.projectRow {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  justify-content: center;
+}
+
+.projectRow a {
+  min-width: 49vw;
+  min-height: 50vh;
+}
+
+.tetraUploadProj {
+  background-color: black;
+}
+
+.tetraShortenProj {
+  background-color: gray;
+}
+
+.friendshippersProj {
+  background-color: pink;
+  width:100%;
+  display: flex;
+}
+
+.friendshippersProj div {
+  width: 50%;
+}
+
+.friendshippersRightArea {
+  display: flex;
+  justify-content: center;
+}
+
+.friendshippersLeftArea {
+  justify-content: center;
+}
+
+.defaultButton {
+  width: 150px;  
+  height: 40px; 
+  border-color: aqua;  
+  border-radius: 5px; 
+  background-color: white; 
+  font-size: 15px;
+}
+
+.techStackBox {
+  margin: 15px; 
+  padding: 20px;
+  padding-bottom: 5px;
+  height: 200px;
+  background-color: white; 
+  border-radius: 15px; 
+  border: 2px solid black;
+}
+
 .row {
   position: absolute;
   top: 75%;
@@ -36,7 +94,7 @@ body {
 }
 
 .row a {
-  flex: 0 0 25%;
+  flex: 0 0 0;
   box-sizing: border-box;
   padding: 10px;
   display: flex;
@@ -94,11 +152,11 @@ body {
 .projectSectionOne {
   background-color: white;
   /* padding: 50px 0; */
-  padding-top: 50px;
+  /* padding-top: 50px; */
   text-align: center;
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  height: 100vh;
   margin-top: 100vh;
 }
 
@@ -109,7 +167,7 @@ body {
   text-align: center;
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  height: 95vh;
   /* margin-top: 100vh; */
 }
 .legalSection {
@@ -119,7 +177,7 @@ body {
   text-align: center;
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  min-height: 95;
   /* margin-top: 100vh; */
 }
 

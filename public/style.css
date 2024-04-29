@@ -90,13 +90,36 @@ body {
   border-color: lightgreen lightgreen transparent transparent;
 }
 
-.white-section {
+.projectSectionOne {
   background-color: white;
-  padding: 50px 0;
+  /* padding: 50px 0; */
+  padding-top: 50px;
   text-align: center;
   position: relative;
   z-index: 1;
+  min-height: 100vh;
   margin-top: 100vh;
+}
+
+.projectSectionTwo {
+  background-color: black;
+  /* padding: 50px 0; */
+  padding-top: 50px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  /* margin-top: 100vh; */
+}
+.legalSection {
+  background-color: gray;
+  /* padding: 50px 0; */
+  padding-top: 50px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  /* margin-top: 100vh; */
 }
 
 @media only screen and (max-width: 600px) {

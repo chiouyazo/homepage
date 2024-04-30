@@ -35,10 +35,12 @@ body {
 }
 
 .tetraUploadProj {
+  padding-top: 20px;
   background-color: black;
 }
 
 .tetraShortenProj {
+  padding-top: 20px;
   background-color: gray;
 }
 
@@ -74,7 +76,6 @@ body {
   margin: 15px; 
   padding: 20px;
   padding-bottom: 5px;
-  height: 200px;
   background-color: white; 
   border-radius: 15px; 
   border: 2px solid black;

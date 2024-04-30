@@ -27,37 +27,66 @@ body {
   flex-wrap: wrap;
   background-color: black;
   justify-content: center;
+  width: 100%;
 }
 
 .projectRow a {
   min-width: 49vw;
-  min-height: 50vh;
+  /* height: 49vh; */
 }
 
 .tetraUploadProj {
-  padding-top: 20px;
-  background-color: black;
+  width: 50%; 
+  height: 47.5vh;
+  background-color: lightgray;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .tetraShortenProj {
-  padding-top: 20px;
+  width: 50%; 
+  height: 47.5vh;
   background-color: gray;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .friendshippersProj {
+  width: 100%;
+  height: 50vh;
   background-color: pink;
-  width:100%;
+  /* display: wrap; */
+  flex-wrap: wrap;
   display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 
-.friendshippersProj div {
-  width: 50%;
-}
+
 
 .friendshippersRightArea {
   display: flex;
   justify-content: center;
+  width: 50%;
 }
+.friendshippersTechStack {
+  /* margin-left: 1%; */
+  justify-content: center;
+  align-content: center;
+  /* height: 50vh; */
+}
+
+.leftFriendshippersStack {
+  width: 50%;
+  height: 50vh;
+}
+
+.leftFriendshippersStack div {
+  align-items: center;
+}
+
 
 .friendshippersLeftArea {
   justify-content: center;
@@ -66,6 +95,7 @@ body {
 .defaultButton {
   width: 150px;  
   height: 40px; 
+  margin: 10px;
   border-color: aqua;  
   border-radius: 5px; 
   background-color: white; 
@@ -73,10 +103,11 @@ body {
 }
 
 .techStackBox {
-  margin: 15px; 
   padding: 20px;
+  width: 250px;
+  height: 250px;
   padding-bottom: 5px;
-  background-color: white; 
+  background-color: white;
   border-radius: 15px; 
   border: 2px solid black;
 }
@@ -151,7 +182,7 @@ body {
 }
 
 .projectSectionOne {
-  background-color: white;
+  background-color: pink;
   /* padding: 50px 0; */
   /* padding-top: 50px; */
   text-align: center;
@@ -207,6 +238,36 @@ body {
       flex-direction: column;
       margin: 10px auto;
       padding: 5px;
+  }
+
+  .tetraUploadProj {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .tetraShortenProj {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .friendshippersProj {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .projectSectionTwo {
+    margin-top: 95vh;
+  }
+  .projectSectionOne {
+    height: 200vh;
+    margin-top: 100vh;
+  }
+
+  .leftFriendshippersStack {
+    width: 90vw;
+  }
+  .friendshippersRightArea {
+    width: 100vw;
   }
 }
 

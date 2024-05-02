@@ -39,16 +39,21 @@ body {
   width: 50%; 
   height: 47.5vh;
   background-color: lightgray;
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  /* align-items: center; */
 }
 
 .tetraShortenProj {
   width: 50%; 
   height: 47.5vh;
   background-color: gray;
-  display: grid;
+  /* display: grid; */
+  /* justify-content: center; */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -71,7 +76,8 @@ body {
   justify-content: center;
   width: 50%;
 }
-.friendshippersTechStack {
+
+.techStackContainer {
   /* margin-left: 1%; */
   justify-content: center;
   align-content: center;

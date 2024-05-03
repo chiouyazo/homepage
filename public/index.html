@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="generator" content="GitLab Pages">
     <title>Portfolio Max-Leon Ernst</title>
-    <script src="script.js" ></script>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
@@ -14,7 +13,7 @@
       <div style="font-size: 22px; text-align: left; color: #f1a6f7;">Fullstack / C# .NET Software Engineer</div>
       <div style="font-size: 18px; text-align: left; color: #f1a6f7;">Working @ empower GmbH, Cologne</div>        
     </div>
-    <div class="row">
+    <section class="row" id="about">
       <a href="https://gitlab.tetra.quest/Chiouya">
         <img class="linkImage" src="resources/gitlabLogo.png" alt="Image 1">
         <b class="linkImageBttmText">GitLab</b>
@@ -31,7 +30,7 @@
         <img class="linkImage" src="resources/mail_icon.png" alt="Image 1">
         <b class="linkImageBttmText">Contact</b>
       </a>
-    </div>
+    </section>
     <div class="sticky">
       <a href="#about">About</a>
       <a href="#public-projects">Public Projects</a>
@@ -147,5 +146,31 @@
         <a href="imprint.html">imprint</a> &VerticalLine; <a href="https://gitlab.tetra.quest/chiouya/homepage">code</a>  &VerticalLine; <a href="privacy.html">privacy</a>
       </h4>
     </section>
+    <script>
+      window.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('section');
+    var currentSectionIndex = 0;
+
+    window.addEventListener('wheel', function(event) {
+      var delta = Math.sign(event.deltaY);
+
+      var currentSection = sections[currentSectionIndex];
+      var currentSectionTop = currentSection.offsetTop;
+      var currentSectionBottom = currentSectionTop + currentSection.clientHeight;
+      var viewportHeight = window.innerHeight;
+      var sectionVisibleHeight = Math.min(viewportHeight, currentSectionBottom) - Math.max(0, currentSectionTop);
+      var sectionVisibleRatio = sectionVisibleHeight / currentSection.clientHeight;
+
+      if (delta > 0 && sectionVisibleRatio > 0.5) {
+        currentSectionIndex++;
+      } else if (delta < 0 && sectionVisibleRatio > 0.5 && currentSectionIndex > 0) {
+        currentSectionIndex--;
+      }
+
+      var nextSection = sections[currentSectionIndex];
+      nextSection.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+    </script>
   </body>
 </html>

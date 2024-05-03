@@ -146,31 +146,5 @@
         <a href="imprint.html">imprint</a> &VerticalLine; <a href="https://gitlab.tetra.quest/chiouya/homepage">code</a>  &VerticalLine; <a href="privacy.html">privacy</a>
       </h4>
     </section>
-    <script>
-      window.addEventListener('DOMContentLoaded', function() {
-    var sections = document.querySelectorAll('section');
-    var currentSectionIndex = 0;
-
-    window.addEventListener('wheel', function(event) {
-      var delta = Math.sign(event.deltaY);
-
-      var currentSection = sections[currentSectionIndex];
-      var currentSectionTop = currentSection.offsetTop;
-      var currentSectionBottom = currentSectionTop + currentSection.clientHeight;
-      var viewportHeight = window.innerHeight;
-      var sectionVisibleHeight = Math.min(viewportHeight, currentSectionBottom) - Math.max(0, currentSectionTop);
-      var sectionVisibleRatio = sectionVisibleHeight / currentSection.clientHeight;
-
-      if (delta > 0 && sectionVisibleRatio > 0.5) {
-        currentSectionIndex++;
-      } else if (delta < 0 && sectionVisibleRatio > 0.5 && currentSectionIndex > 0) {
-        currentSectionIndex--;
-      }
-
-      var nextSection = sections[currentSectionIndex];
-      nextSection.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-    </script>
   </body>
 </html>

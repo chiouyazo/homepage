@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Cascadia Mono Semibold', monospace;
   margin: 0;
@@ -38,9 +42,11 @@ body {
 .tetraUploadProj {
   width: 50%; 
   height: 47.5vh;
-  background-color: lightgray;
+  background-color: #ffbcd9;
   display: flex;
   flex-wrap: wrap;
+  z-index: 2;
+  /* box-shadow: 2px 1px 7px -5px gray; */
   justify-content: center;
   align-items: center;
   /* align-items: center; */
@@ -49,7 +55,9 @@ body {
 .tetraShortenProj {
   width: 50%; 
   height: 47.5vh;
-  background-color: gray;
+  background-color: #ffd1dc;
+  z-index: 1;
+  /* box-shadow: 2px 1px 7px -5px gray; */
   /* display: grid; */
   /* justify-content: center; */
   display: flex;
@@ -61,7 +69,7 @@ body {
 .friendshippersProj {
   width: 100%;
   height: 50vh;
-  background-color: pink;
+  background-color:  pink;
   /* display: wrap; */
   flex-wrap: wrap;
   display: flex;

@@ -6,6 +6,7 @@ body {
   font-family: 'Cascadia Mono Semibold', monospace;
   margin: 0;
   padding: 0;
+  overflow: hidden;
   background-color: black;
 }
 
@@ -218,6 +219,7 @@ body {
 .legalSection {
   background-color: gray;
   /* padding: 50px 0; */
+  top: 100vh;
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
@@ -226,6 +228,18 @@ body {
   height: 10vh;
   /* margin-top: 100vh; */
 }
+/* old */
+/* .legalSection {
+  background-color: gray;
+  padding: 50px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  height: 10vh;
+  margin-top: 100vh;
+} */
 
 @media only screen and (max-width: 600px) {
   .sticky {

@@ -129,9 +129,9 @@ body {
 
 .row {
   position: absolute;
-  top: 75%;
+  top: 60%;
   left: 50%;
-  transform: translate(-50%, -75%);
+  transform: translate(-50%, -60%);
   display: flex;
   justify-content: center; 
   flex-wrap: wrap;

@@ -198,8 +198,6 @@ body {
 
 .projectSectionOne {
   background-color: pink;
-  /* padding: 50px 0; */
-  /* padding-top: 50px; */
   text-align: center;
   position: relative;
   z-index: 1;
@@ -214,11 +212,9 @@ body {
   position: relative;
   z-index: 1;
   height: 95vh;
-  /* margin-top: 100vh; */
 }
 .legalSection {
   background-color: gray;
-  /* padding: 50px 0; */
   top: 100vh;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -226,20 +222,7 @@ body {
   position: relative;
   z-index: 1;
   height: 10vh;
-  /* margin-top: 100vh; */
 }
-/* old */
-/* .legalSection {
-  background-color: gray;
-  padding: 50px 0;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-  position: relative;
-  z-index: 1;
-  height: 10vh;
-  margin-top: 100vh;
-} */
 
 @media only screen and (max-width: 600px) {
   .sticky {
